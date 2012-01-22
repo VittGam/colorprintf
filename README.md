@@ -6,24 +6,24 @@ Output colored text to ANSI (Linux, iPhone) and Windows terminals.
 
 This function wraps printf (by using vprintf), and adds a 'color' parameter to it.
 
-	color =	0 -> red
-		1 -> green
-		2 -> yellow
-		3 -> blue
-		4 -> magenta
-		5 -> cyan
+    color = 0 -> red
+            1 -> green
+            2 -> yellow
+            3 -> blue
+            4 -> magenta
+            5 -> cyan
 
 ## Usage
 
 Just include the header in your C file:
 
-	#include "colorprintf.h"
+    #include "colorprintf.h"
 
 The syntax is the same as printf, with the added color parameter.
 
-	colorprintf(1,"Welcome!");
-	colorprintf(5,"i is equal to %d",i);
-	colorprintf(0,"An unknown error occurred: %s",error_description);
+    colorprintf(1,"Welcome!");
+    colorprintf(5,"i is equal to %d",i);
+    colorprintf(0,"An unknown error occurred: %s",error_description);
 
 ## License
 
