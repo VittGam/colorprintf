@@ -1,7 +1,5 @@
 # Colored printf by VittGam.net
 
-## Description
-
 Output colored text to ANSI (Linux, iPhone) and Windows terminals.
 
 This function wraps printf (by using vprintf), and adds a 'color' parameter to it.
