@@ -1,6 +1,6 @@
-# Colored printf by VittGam.net
+# colorprintf by VittGam
 
-Output colored text to ANSI (Linux, iPhone) and Windows terminals.
+A simple C / C++ header file to output colored text to ANSI (Linux, iPhone) and Windows terminals.
 
 This function wraps printf (by using vprintf), and adds a 'color' parameter to it.
 
@@ -13,15 +13,15 @@ This function wraps printf (by using vprintf), and adds a 'color' parameter to i
 
 ## Usage
 
-Just include the header in your C file:
+Just include the header at the beginning of your C / C++ code:
 
     #include "colorprintf.h"
 
 The syntax is the same as printf, with the added color parameter.
 
-    colorprintf(1,"Welcome!");
-    colorprintf(5,"i is equal to %d",i);
-    colorprintf(0,"An unknown error occurred: %s",error_description);
+    colorprintf(1, "Welcome!\n");
+    colorprintf(5, "i is equal to %d\n", i);
+    colorprintf(0, "An unknown error occurred: %s (error code: %d)\n", error_description, error_code);
 
 ## License
 
