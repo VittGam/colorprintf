@@ -70,7 +70,7 @@ int colorprintf(int color, const char *format, ...) {
 	WORD wOldColorAttrs;
 	HANDLE hStdout;
 	if (fcolor != -1) {
-		HANDLE hStdout = GetStdHandle(STD_OUTPUT_HANDLE);
+		hStdout = GetStdHandle(STD_OUTPUT_HANDLE);
 		if ((hStdout == NULL) || (hStdout == INVALID_HANDLE_VALUE)) {
 			return -99;
 		}
